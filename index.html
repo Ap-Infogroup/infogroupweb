@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Yourtrader - Keep Learning Keep Growing</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/logo1.png" rel="icon">
+  <link href="img/logo1.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+  </style>
+</head>
+
+<body>
+<header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>Spontaneous</span></a></h1> -->
+        <a href="index.php" class="scrollto"><img src="img/logo2.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.php" style="color: #05396B; font-weight: bolder;">Home</a></li>
+           <li class="drop-down"><a href="" style="color: #05396B; font-weight: bolder;">Professional Courses</a>
+            <ul>
+              <li><a href="advance-smart-trader.php">Advance Smart Trader (AST)</a></li>
+              <li><a href="advance-market-maker.php">Advance Market Maker (AMM)</a></li>
+              <li><a href="professional-research-analyst.php">Professional Research Analyst (PRA)</a></li>
+              <li><a href="diploma-in-financial-market.php">Diploma in Financial Market (DIFM)</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="#team">Team</a></li> -->
+          <!-- <li class="drop-down"><a href="">Specialized Courses</a>
+            <ul>
+              <li class="drop-down"><a href="#">NISM/ NCFM Modules</a>
+                <ul>
+                  <li><a href="#">Equity Market Course</a></li>
+                  <li><a href="#">Derivative Market</a></li>
+                  <li><a href="#">Commodity Market Course</a></li>
+                  <li><a href="#">Currency Market Course</a></li>
+                  
+                </ul>
+              </li>
+              <li><a href="#">Mutual Fund Distribution</a></li>
+              <li><a href="#">Research Analyst</a></li>
+              <li><a href="#">Fundamental Analysis</a></li>
+              <li><a href="#">Option Strategy</a></li>
+              <li><a href="#">Technical Analyst</a></li>
+              <li><a href="#" style="color: orange;">ISTS Mentorship Program</a></li>
+              <li><a href="#" style="color: orange;">STS Mentorship Program</a></li>
+            </ul>
+          </li> -->
+         <!--  <li><a href="#about">About Us</a></li> -->
+          <li><a href="contact.php" style="color: #05396B; font-weight: bolder;">Contact Us</a></li>
+          <!-- <li><a href="#" style="color: #05396B; font-weight: bolder;">Certification</a></li> -->
+          <li><a href="#contact" style="color: red;" onclick="openForm()">Join Live Demo</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+    <div class="form-popup" id="myForm" >
+  <form action="" class="form-container" style="background-color: #05396B;">
+    <center>
+    <p style="font-size: 25px; color: white; font-weight: bolder;">Join Free Live Demo</p>
+    <p style="color: #EDC855; margin-top: -30px; font-weight: bolder;">Premium Stock Market Institute</p>
+    </center>
+    <label for="email"><b style="color: white;">Name</b></label>
+    <input type="text" placeholder="John Doe - yourTrader" name="email" required>
+
+    <label for="psw"><b style="color: white;">Mobile </b></label>
+    <input type="text" placeholder="+91-xxxx-xxxx-xx" name="psw" required>
+
+    <label for="psw"><b style="color: white;">Message</b></label>
+    <input type="text" placeholder="Why you want to join demo?" name="psw" required>
+
+    <button type="submit" class="btn" style="background-color: #007BFF;" onclick="mysubmit()">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function mysubmit(){
+  alert("Thank you! Our representative will get in touch with you.");
+}
+</script>
+
+    
+  
+  </header>
+  <!--==========================
+  Header
+  ============================-->
+  <?php include("header.php") ?>
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix" style="background-image: url('img/bg5.jpg');">
+    <div class="container">
+
+      <div class="intro-img">
+        <img src="img/intro-img.sv" alt="" class="img-fluid">
+      </div>
+
+      <div class="intro-info" style="background-color: #05396B; padding: 5px 20px 0px 20px; border-radius: 15px; width: 430px;">
+        <h2 style="color: white; font-weight: bolder;" class="">Want to learn<br>How to trade in<br><b style="color: #EF9614;">Stock Market?</b></h2>
+        <div style="margin-top: -30px;">
+          <a href="#about" class="btn-get-started scrollto" onclick="openForm()">Join Now</a>
+          
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+ <!-- Uncomment below i you want to use a preloader -->
+<!-- <div id="preloader">
+    <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logoy1.png" alt="">
+                </div>
+            </div>
+        </div>
+  </div> -->
+
+  <main id="main">
+
+     <!-- ? services-area -->
+        <div class="services-area">
+            <div class="container">
+                <div class="row justify-content-sm-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30" style="background-color: #05396B;">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon1.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3 style="color: white;">Financial Courses</h3>
+                                <p style="color: white;">Best of the industry fit on demand courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30" style="background-color: #05396B;">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon2.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3 style="color: white;">Expert instructors</h3>
+                                <p style="color: white;">Leading trainers with 10+ years of experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30" style="background-color: #05396B;">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon3.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3 style="color: white;">Life time Mentorship</h3>
+                                <p style="color: white;">Learning must go on. Keep learning, keep growing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- top trending courses -->
+<div class="text-center" style="background-image: url('images/1.jpg');">  
+  <h3 class="h2">TOP TRENDING COURSES</h3>
+  <p class="text-secondary"><i>We offer a wide and flexible range of courses to meet your needs.</i></p>
+</div>
+<div class="row m-3">
+
+  <div class=" col-lg-3 col-sm-10 my-0">
+  <div class="card">
+  <img class="card-img-top shadow" src="assets/img/gallery/featured21.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Diploma in Financial Market (DIFM)</h5>
+    <p class="card-text">DIFM is a 6 month industry oriented course specially designed for those who want to make their career in financial institutions, broking houses, research houses, depository houses, want to work as a arbitrager, executive or manager, investor or trader.</p>
+    <a href="diploma-in-financial-market.php" class="btn btn-warning" style="color: white; background-color: #05396B;">Join Now</a>
+  </div>
+</div>
+</div>
+
+  <div class=" col-lg-3 col-sm-10 my-0">
+  <div class="card">
+  <img class="card-img-top shadow" src="assets/img/gallery/featured1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Advance Market Maker (AMM)</h5>
+    <p class="card-text">AMM is the best-advanced fast-track course designed for stock market traders. AMM covers all basic to advance curriculum a trader requirement in stock market trading in Futures, Capital, Commodities, Currency & Technical Analysis.</p>
+    <a href="advance-market-maker.php" class="btn btn-warning" style="color: white; background-color: #05396B;">Join Now</a>
+  </div>
+</div>
+</div>
+
+  <div class=" col-lg-3 col-sm-10 my-0">
+  <div class="card">
+  <img class="card-img-top shadow" src="assets/img/gallery/featured22.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Advance Smart Trader (AST)</h5>
+    <p class="card-text">AST is specially designed for those who want to become full-time successful trader & investor. This course cover NSE NCFM and SEBI NISM certifications of capital market, Derivatives market , Commodities market & Currency markets. </p>
+    <a href="advance-smart-trader.php" class="btn btn-warning" style="color: white; background-color: #05396B;">Join Now</a>
+  </div>
+
+</div>
+</div>
+
+  <div class=" col-lg-3 col-sm-10 my-0">
+  <div class="card">
+  <img class="card-img-top shadow" src="assets/img/gallery/featured1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Professional Research Analyst (PRA)</h5>
+    <p class="card-text">Professional Research Analyst is a short term course with 100% Job placement assistance in broking houses, financial institutions and banking industry.</p>
+    <a href="professional-research-analyst.php" class="btn" style="color: white; background-color: #05396B;">Join Now</a>
+  </div>
+</div>
+</div>
+</div>
+<!-- top trending courses ends here -->
+
+  
+   
+
+    <!--==========================
+      Why Us Section
+    ============================-->
+    <section id="why-us" class="wow fadeIn">
+      <div class="container">
+        <center>
+        <header class="header" >
+          <h3 style="color: white;">Why choose us?</h3>
+          <p style="color: white;">YOURTRADER LEARNING NOT JUST OFFERS THE BEST TRAINING SOLUTIONS FOR EVERYONE, IT AIMS TO PARTNER WITH INDIVIDUALS AND ORGANIZATIONS,HELPING THEM MOVE AHEAD IN THEIR FINANCIAL TRANSFORMATION JOURNEYS.</p>
+        </header>
+        </center>
+        <div class="row row-eq-height justify-content-center">
+
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-diamond" style="color: white;"></i>
+              <div class="card-body">
+                <h5 class="card-title" style="color: #EDC855">Expert Faculty</h5>
+                <p class="card-text" style="color: white;">Study from India's top teachers for conceptual understanding</p>
+                <!-- <a href="#" class="readmore">Read more </a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-language" style="color: white;"></i>
+              <div class="card-body">
+                <h5 class="card-title" style="color: #EDC855">Dedicated Doubt Sessions</h5>
+                <p class="card-text" style="color: white;">Get doubts cleared instantly</p>
+                <!-- <a href="#" class="readmore">Read more </a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-object-group" style="color: white;"></i>
+              <div class="card-body">
+                <h5 class="card-title" style="color: #EDC855">Personalized Curriculum</h5>
+                <p class="card-text" style="color: white;">One-on-one mentor guidance</p>
+                <!-- <a href="#" class="readmore">Read more </a> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+   
+    <!--==========================
+      Clients Section
+    ============================-->
+
+    <div class=" my-3" style="margin-bottom: 10px;">
+  <div class="text-center" style="background-image: url('images/1.jpg');">
+    <h3 class="h2">WHAT OUR STUDENTS SAY</h3>
+    <p style="font-size: 20px;"><q> we’re proud to provide only the best in interactive, finance job oriented courses and certifications to companies and individuals </q></P>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- ------------- -->
+
+<div class="card-group m-3">
+  <div class="card m-2">
+    <img class="card-img-top shadow" src="images/feedback/11.jpg" alt="Card image cap">
+  </div>
+  <div class="card m-2">
+    <img class="card-img-top shadow" src="images/feedback/12.jpg" alt="Card image cap">
+  </div>
+  <div class="card m-2">
+    <img class="card-img-top shadow" src="images/feedback/13.jpg" alt="Card image cap">
+  </div>
+  <div class="card m-2">
+    <img class="card-img-top shadow" src="images/feedback/14.jpg" alt="Card image cap">
+  </div>
+</div>
+<!--  -------------------------  -->     
+    </div>
+    <div class="carousel-item">
+      <div class="card-group m-3">
+  <div class="card m-2">
+    <img class="card-img-top shadow" src="images/feedback/15.jpg" alt="Card image cap">
+  </div>
+  <div class="card m-2">
+    <img class="card-img-top shadow" src="images/feedback/16.jpg" alt="Card image cap">
+  </div>
+  <div class="card m-2">
+    <img class="card-img-top shadow" src="images/feedback/17.jpg" alt="Card image cap">
+  </div>
+  <div class="card m-2">
+    <img class="card-img-top shadow" src="images/feedback/18.jpg" alt="Card image cap">
+  </div>
+</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+   <!-- #testimonials -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+   <!-- #team -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+
+
+    <!-- card -->
+    <div class="container-fluid">
+    <div class="row my-3" style="padding-right: 14px; padding-left: 14px;">
+            <div class="border col-lg-3 col-sm-6 text-center shadow" style="background-color: #05396B;">
+                    <h2 class="my-2" style="color: white;">25+</h2>
+                    <p class="text" style="color: #EDC855; font-weight: bolder;">EXPERIENCED TRAINERS</p>
+                </div>
+                <div class="border col-lg-3 col-sm-6 text-center shadow" style="background-color: #05396B;">
+                     <h2 class="my-2" style="color: white;">20,0000+</h2>
+                    <p class="text" style="color: #EDC855; font-weight: bolder;">PROFESSIONALS TRAINED</p>
+                </div>
+                <div class="border col-lg-3 col-sm-6 text-center shadow" style="background-color: #05396B;">
+                    <h2 class="my-2 " style="color: white;">27+</h2>
+                    <p class="text" style="color: #EDC855; font-weight: bolder;">REGIONS REACHED</p>
+                </div>
+                <div class="col-lg-3 border col-sm-6 text-center shadow" style="background-color: #05396B;">
+                    <h2 class="my-2" style="color: white;">232+</h2>
+                    <p class="text" style="color: #EDC855; font-weight: bolder;">PROJECTS DONE & DELIVERED</p>
+                </div>
+        </div>
+        </div>
+<!-- card ends --> 
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <?php include("footer.php") ?>
+  <footer id="footer" >
+	
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+      <div class="footer-top" style="background-color: #05396B">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3>YourTrader Learning</h3>
+              <p style="color: white;">Our Mission: To create personalized learning for every learner. The spontaneous learning class provide a learning platform where students can learn, engage & stay excited about their own path to discover the world.</p>
+            </div>
+  
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <!-- <li><a href="#">Terms of service</a></li> -->
+                <li><a href="privacy.html">Privacy policy</a></li>
+                <li><a href="#" style="color: yellow; font-weight: bold;">Pay Now >></a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p style="color: white;">
+                YourTrader Learning <br>
+                G-73A, Opposite Ansal Plaza Mall<br>
+                Gurugram - 122017<br>
+                <strong>WhatsAPP:</strong> +91 9650923568<br>
+                <strong>Email:</strong> yourtrader.info@gmail.com<br>
+              </p>
+  
+              <div class="social-links">
+                <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
+                <a href="https://www.facebook.com/theyourtrader" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/theyourtrader/" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://t.me/theyourtrader" class="google-plus"><i class="fa fa-telegram"></i></a>
+                <!-- <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Join Our Telegram Channel</h4>
+              <p style="color: white;"></p>
+              <a href="https://t.me/theyourtrader" class="google-plus" target="_blank"><button type="button" class="btn" style="background-color: #007BFF; color: white; font-size: 20px;">Telegram <i class="fa fa-telegram"></i></button></a>
+              <!-- <form action="" method="post">
+                <input type="email" name="email"><input type="submit"  value="Subscribe">
+              </form> -->
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>Intella Education (P) Ltd.</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          
+          Designed by <a href="http://www.intellaeducation.com/">Intella Team</a>
+        </div>
+      </div>
+    </footer><!-- #footer -->
+  
+ 
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

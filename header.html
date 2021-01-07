@@ -1,0 +1,184 @@
+<head>
+  <meta charset="utf-8">
+  <title>Yourtrader - Keep Learning Keep Growing</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/logo1.png" rel="icon">
+  <link href="img/logo1.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    .open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+  </style>
+</head>
+<header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>Spontaneous</span></a></h1> -->
+        <a href="index.php" class="scrollto"><img src="img/logo2.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.php" style="color: #05396B; font-weight: bolder;">Home</a></li>
+           <li class="drop-down"><a href="" style="color: #05396B; font-weight: bolder;">Professional Courses</a>
+            <ul>
+              <li><a href="advance-smart-trader.php">Advance Smart Trader (AST)</a></li>
+              <li><a href="advance-market-maker.php">Advance Market Maker (AMM)</a></li>
+              <li><a href="professional-research-analyst.php">Professional Research Analyst (PRA)</a></li>
+              <li><a href="diploma-in-financial-market.php">Diploma in Financial Market (DIFM)</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="#team">Team</a></li> -->
+          <!-- <li class="drop-down"><a href="">Specialized Courses</a>
+            <ul>
+              <li class="drop-down"><a href="#">NISM/ NCFM Modules</a>
+                <ul>
+                  <li><a href="#">Equity Market Course</a></li>
+                  <li><a href="#">Derivative Market</a></li>
+                  <li><a href="#">Commodity Market Course</a></li>
+                  <li><a href="#">Currency Market Course</a></li>
+                  
+                </ul>
+              </li>
+              <li><a href="#">Mutual Fund Distribution</a></li>
+              <li><a href="#">Research Analyst</a></li>
+              <li><a href="#">Fundamental Analysis</a></li>
+              <li><a href="#">Option Strategy</a></li>
+              <li><a href="#">Technical Analyst</a></li>
+              <li><a href="#" style="color: orange;">ISTS Mentorship Program</a></li>
+              <li><a href="#" style="color: orange;">STS Mentorship Program</a></li>
+            </ul>
+          </li> -->
+         <!--  <li><a href="#about">About Us</a></li> -->
+          <li><a href="contact.php" style="color: #05396B; font-weight: bolder;">Contact Us</a></li>
+          <!-- <li><a href="#" style="color: #05396B; font-weight: bolder;">Certification</a></li> -->
+          <li><a href="#contact" style="color: red;" onclick="openForm()">Join Live Demo</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+    <div class="form-popup" id="myForm" >
+  <form action="" class="form-container" style="background-color: #05396B;">
+    <center>
+    <p style="font-size: 25px; color: white; font-weight: bolder;">Join Free Live Demo</p>
+    <p style="color: #EDC855; margin-top: -30px; font-weight: bolder;">Premium Stock Market Institute</p>
+    </center>
+    <label for="email"><b style="color: white;">Name</b></label>
+    <input type="text" placeholder="John Doe - yourTrader" name="email" required>
+
+    <label for="psw"><b style="color: white;">Mobile </b></label>
+    <input type="text" placeholder="+91-xxxx-xxxx-xx" name="psw" required>
+
+    <label for="psw"><b style="color: white;">Message</b></label>
+    <input type="text" placeholder="Why you want to join demo?" name="psw" required>
+
+    <button type="submit" class="btn" style="background-color: #007BFF;" onclick="mysubmit()">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function mysubmit(){
+  alert("Thank you! Our representative will get in touch with you.");
+}
+</script>
+
+    
+  
+  </header><!-- #header -->
